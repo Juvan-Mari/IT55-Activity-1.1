@@ -2,51 +2,179 @@
 <html>
 <head>
 	<title>My Webpage</title>
-	<meta charset="UTF-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1" />
-  	<meta name="description" content="Something about me." />
-  	<meta name="author" content="Juvan Mari M. Casas" />
 	<style>
-		body { font-family: Arial, margin: 20px:}
-		.box { border: 2px solid black; padding: 10px; margin: 10px; display: inline-block;}
+        body{
+            color:rgb(30, 255, 0) ;
+            position: center;
+            text-align: center;
+
+        }
+
+		video.background {
+			position: fixed;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			z-index: -1;
+
+		}
+
+        .pixel-box {
+            border: 4px solid white;
+            outline: 2px solid black; 
+            padding: 20px;
+            width: fit-content;
+            margin: 20px auto;
+            background: black;
+    	}
+
+        ul{
+            list-style-position:inside;
+            text-align: justify;
+            padding:0;
+        }
+
+		.glow{
+  			border: 2px solid white;
+  			padding: 10px;
+  			width: 400px;
+			text-align: center;
+  			margin: 20px auto;
+  			box-shadow: 0 0 10px white;
+		}
+
+		.quote{
+  			border: 2px solid white;
+  			padding: 15px;
+  			width: 400px;
+  			margin: 20px auto;
+			background-color: black;
+  			box-shadow: 0 0 10px white;
+		}
+
+		.double {
+  			border: 3px double white;
+  			padding: 15px;
+  			width: fit-content;
+  			margin: 20px auto;
+  			background: black;
+
+			
+		}
+		
+		div{
+			border: 2px solid white;
+  			padding: 15px;
+  			width: 400px;
+  			margin: 20px auto;
+  			box-shadow: 0 0 10px white;
+		}
+
+        table{
+            margin: 0 auto;
+			text-align: center;
+        }
+
+		.pixel{
+  			border: 4px solid white;
+  			outline: 2px solid black;
+  			padding: 20px;
+  			width: 400px;
+  			margin: 20px auto;
+  			background: black;
+		}
+
+        @font-face{
+            font-family: "Undertale";
+            src: url("DeterminationMonoWebRegular-Z5oq.ttf") format("truetype");
+        }
+
+		.align{
+			text-align: center;
+		}
+
+        body{
+            font-family: "Undertale", monospace;
+        }
+
+		.dialogue{
+  			border: 3px double white;
+  			padding: 15px;
+  			width: 300px;
+  			margin: 20px auto;
+  			text-align: left;
+			background-color: black;
+			left: 70;
+		}
+
+
+
+		.inside {
+      		border: 3px solid white;
+      		padding: 20px;
+      		display: flex;           
+      		flex-wrap: wrap;         
+      		gap: 15px;              
+      		width: fit-content;      
+      		margin: center;            
+      		background: black;
+    	}
+
+
 	</style>
 </head>
 <body>
-	<h1>Something about Me</h1>
-	<p>HI! I am <b>Juvan Mari M. Casas</b>, in this website you will be learning something about me!</p>
-	<img src="Me.jpg" alt = "My Image" width="200" height="200">
-	<ul>
-		<li>Name: Juvan Mari M. Casas</li>
-		<li>Age: 19</li>
-		<li>Current Residence: Dologon</li>
-		<li>Highest Educational Attainment: College 2nd Year</li>
-	</ul>
+	<video autoplay muted loop class="background">
+		<source src="the-ruins-undertale-pixel-moewalls-com.mp4" type="video/mp4">
+	</video>
 
-	<h2>Favourite Foods: </h2>
-	<ul>
-		<li> Calamary </li>
-		<li> Fried Chicken </li>
-		<li> BBQ </li>
-		<li> Scrambled Eggs </li>
-	</ul>
-	<h3>Favourite Past Times: </h3>
-	<ul>
+	<h1 class="glow">Something about Me</h1>
+
+	<p class="pixel">HI! I am <b>Juvan Mari M. Casas</b>, in this website you will be learning something about me! 
+
+	<img  src="Me.jpg" alt = "My Image" width= auto height="300" >
+
+	</p>
+
+	<div class = "inside">
+	
+		<ul class = "double"><b>Favourite Foods:</b>
+			<li> Calamary </li>
+			<li> Fried Chicken </li>
+			<li> BBQ </li>
+			<li> Scrambled Eggs </li>
+		</ul>
+	
+
+	
+		<ul class = "double">
+			<li>Name: Juvan Mari M. Casas</li>
+			<li>Age: 19</li>
+			<li>Current Residence: Dologon</li>
+		</ul>
+	 
+	<ul class = "dialogue"><b>Favourite Past Times:</b>
 		<li>Playing Video Games</li>
 		<li>Sleeping</li>
 		<li>Watching Movies</li>
 		<li>Eating</li>
 		<li>Travelling</li>
 	</ul>
-
+	</div>
+    <br>
+	<div class = "double">
 	<h3>My Favourite Image in my Current Situation rn: </h4>
 	<img src="turtle-huh.jpg" alt = "My Image">
 	<p>Credits to: Tenor.com</p>
 
 	<!-- Credits to Tenor.com -->
-
+	<br>
+	</div>
 	<h4>↑↑ Click the link below for more images like these ↑↑ </h4>
 	<p><a href="https://tenor.com/" target="_blank">Tenor.com</a></p>
 	<br><br>
+
+	<div class="flex">
 	<h3>♪Favourite Music♪</h3>
 	<audio controls>
 		<source src= "Everybody Wants To Rule The World.mp3" type = "audio/mpeg">
@@ -61,12 +189,12 @@
     		<source src="Bee Gees - How Deep Is Your Love (Official Video).mp4" type="video/mp4">
   	</video>
 	<p>Credits to: Bee Gees (1958)</p>
-
+	</div>
 	<!-- Credits to Bee Gees -->
 
 	<br><br>
-	<h2>My Family: </h2>
-	<table border = "2" cellpadding = "8">
+	<h2 >My Family: </h2>
+	<table class = "double" border = "3" cellpadding = "8">
 		<tr>
 			<th>Name</th>
 			<th>Age</th>
@@ -93,9 +221,9 @@
 			<td>19</td>
 		</tr>
 	</table>
-	<br><br>
+	<br>
 	<h2>If you want to know more about me please log in: </h2>
-  	<form>
+  	<form class = "double"> 
     		<label for="name">Name:</label>
     		<input type="text" id="name" name="name"><br><br>
 
@@ -107,8 +235,9 @@
 	
 	<br><br>
 	
-	<h2>Favourite Quote: </h2>
-		<div class="box">"Happiness depends on each person, If you think you're happy, then you must be happy." - Sakata Gintoki</div>
+	<div class ="quote">Favourite Quote: 
+		<h1>"Despite everything, it's still you"</h1>
+	</div>
 </body>
 </html>
 	
